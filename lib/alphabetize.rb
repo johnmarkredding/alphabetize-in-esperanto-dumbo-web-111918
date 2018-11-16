@@ -5,7 +5,7 @@ def alphabetize(arr)
   }
   arr.sort_by do |x|
     
-    x.each_char do |chr|
+    x.map do |chr|
       alpha_hash[chr]
     end
   end
